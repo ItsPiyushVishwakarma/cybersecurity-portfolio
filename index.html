@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Piyush Vishwakarma cybersecurity portfolio with blue team projects, future red team work, certifications, and resume."
+    />
+    <title>Piyush Vishwakarma | Cybersecurity Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="cursor-dot" aria-hidden="true"></div>
+    <div class="cursor-ring" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Go to portfolio home">
+        <span class="brand-mark">PV</span>
+        <span>
+          <strong>Piyush Vishwakarma</strong>
+          <small>Cybersecurity Portfolio</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="theme-button" id="themeToggle" type="button" aria-label="Toggle dark and light theme">
+        <span class="toggle-track"><span class="toggle-thumb"></span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">MCA Cybersecurity Student / SOC Analyst Track / Cloud Security</p>
+          <h1>Cybersecurity proof of work for blue team, red team, and career growth.</h1>
+          <p class="lead">
+            I am an aspiring SOC Analyst building hands-on projects across Python security tooling,
+            digital forensics, network security, AWS cloud fundamentals, and documented cyber labs.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">View Projects</a>
+            <a class="button secondary" href="assets/resume/Piyush_Vishwakarma_Resume.pdf" download>Download Resume</a>
+          </div>
+
+          <div class="stats" aria-label="Portfolio focus areas">
+            <span><strong>08</strong> GitHub Projects</span>
+            <span><strong>08</strong> Certifications</span>
+            <span><strong>01</strong> Resume / CV</span>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Cybersecurity dashboard preview">
+          <img src="assets/images/security-dashboard.svg" alt="Stylized cybersecurity dashboard with blue and red team signals" />
+        </div>
+      </section>
+
+      <section class="switch-panel" aria-labelledby="switch-title">
+        <div>
+          <p class="eyebrow">Career mode switch</p>
+          <h2 id="switch-title">Choose the view: Blue Team, Red Team, or Career.</h2>
+        </div>
+        <div class="segmented-control" role="tablist" aria-label="Portfolio track">
+          <button class="segment active" type="button" data-track="blue" role="tab" aria-selected="true">Blue Team</button>
+          <button class="segment" type="button" data-track="red" role="tab" aria-selected="false">Red Team</button>
+          <button class="segment" type="button" data-track="career" role="tab" aria-selected="false">Career</button>
+        </div>
+      </section>
+
+      <section class="content-section" id="trackDetails" aria-live="polite"></section>
+
+      <section class="content-section split" id="projects">
+        <div class="section-intro">
+          <p class="eyebrow">Showcase</p>
+          <h2>Projects</h2>
+          <p>
+            Add your completed projects in <code>script.js</code>. Keep every project clear:
+            problem, tools, evidence, outcome, and GitHub proof.
+          </p>
+        </div>
+        <div class="card-grid" id="projectGrid"></div>
+      </section>
+
+      <section class="content-section split" id="certifications">
+        <div class="section-intro">
+          <p class="eyebrow">Achievements</p>
+          <h2>Certifications & Milestones</h2>
+          <p>
+            Add certifications, course completions, CTF milestones, internships, workshops, and
+            important security learning wins here.
+          </p>
+        </div>
+        <div class="timeline" id="certificationList"></div>
+      </section>
+
+      <section class="content-section resume-band" id="resume">
+        <div>
+          <p class="eyebrow">Resume / CV</p>
+          <h2>Give HR one clean place to download the latest resume.</h2>
+          <p>
+            Replace the placeholder PDF in <code>assets/resume/</code> with your actual resume using
+            the same file name.
+          </p>
+        </div>
+        <a class="button primary" href="assets/resume/Piyush_Vishwakarma_Resume.pdf" download>Download Resume</a>
+      </section>
+
+      <section class="content-section contact-section" id="contact">
+        <p class="eyebrow">Contact</p>
+        <h2>Let’s connect.</h2>
+        <div class="contact-links">
+          <a href="https://github.com/ItsPiyushVishwakarma" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/itspiyushkarma-cybersecurity" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/itspiyushkarma" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="mailto:your.email@example.com">Email</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© <span id="year"></span> Piyush Vishwakarma</span>
+      <span>Static portfolio / GitHub Pages ready</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
